@@ -1,0 +1,408 @@
+/* レイアウト */
+.app-container {
+  min-height: 100vh;
+  background-color: #f9fafb;
+  padding: 2rem;
+}
+
+.app-content {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.app-header {
+  margin-bottom: 2rem;
+}
+
+.app-title {
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.app-description {
+  color: #6b7280;
+}
+
+/* フィルターパネル */
+.filter-panel {
+  background-color: #f9fafb;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.filter-section {
+  margin-bottom: 1.5rem;
+}
+
+.filter-section:last-child {
+  margin-bottom: 0;
+}
+
+.filter-title {
+  color: #111827;
+  margin-bottom: 0.75rem;
+}
+
+.filter-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.filter-checkbox {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.25rem;
+  border: 1px solid #d1d5db;
+  cursor: pointer;
+}
+
+.filter-checkbox:checked {
+  background-color: #2563eb;
+  border-color: #2563eb;
+}
+
+.filter-checkbox:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+.filter-checkbox-text {
+  color: #374151;
+}
+
+.filter-time-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.filter-date-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.filter-date-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.filter-label {
+  color: #374151;
+}
+
+.filter-date-input {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  outline: none;
+}
+
+.filter-date-input:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 0;
+}
+
+.filter-date-input::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  opacity: 1;
+  filter: brightness(0) invert(1);
+}
+
+.filter-weekday-group {
+  margin-top: 0.5rem;
+}
+
+.filter-weekday-label {
+  color: #374151;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.filter-weekday-checkboxes {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.filter-weekday-item {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  cursor: pointer;
+}
+
+.filter-buttons {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.filter-apply-button {
+  padding: 0.5rem 1.5rem;
+  background-color: #2563eb;
+  color: white;
+  border-radius: 0.375rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.filter-apply-button:hover {
+  background-color: #1d4ed8;
+}
+
+.filter-transpose-button {
+  padding: 0.5rem 1rem;
+  background-color: #e5e7eb;
+  color: #374151;
+  border-radius: 0.375rem;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background-color 0.2s;
+}
+
+.filter-transpose-button:hover {
+  background-color: #d1d5db;
+}
+
+/* グリッドコンテナ */
+.grid-container {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+}
+
+.grid-legend {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.legend-color {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.25rem;
+}
+
+.legend-color-available {
+  background-color: #22c55e;
+}
+
+.legend-color-reserved-others {
+  background-color: #ef4444;
+}
+
+.legend-color-reserved-self {
+  background-color: #3b82f6;
+}
+
+.legend-text {
+  color: #374151;
+}
+
+/* スケジュールグリッド */
+.schedule-grid {
+  overflow-x: auto;
+}
+
+.schedule-grid-inner {
+  min-width: max-content;
+}
+
+.schedule-header-row {
+  display: flex;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.schedule-header-corner {
+  width: 8rem;
+  flex-shrink: 0;
+  padding: 0.75rem;
+  border-right: 2px solid #d1d5db;
+}
+
+.schedule-header-cell {
+  width: 20rem;
+  flex-shrink: 0;
+  padding: 0.75rem;
+  border-right: 1px solid #e5e7eb;
+  text-align: center;
+}
+
+.schedule-header-text {
+  color: #374151;
+}
+
+.schedule-time-row {
+  display: flex;
+  border-bottom: 2px solid #d1d5db;
+}
+
+.schedule-time-corner {
+  width: 8rem;
+  flex-shrink: 0;
+  padding: 0.75rem;
+  border-right: 2px solid #d1d5db;
+}
+
+.schedule-time-cell {
+  width: 20rem;
+  flex-shrink: 0;
+  padding: 0.75rem 0.75rem 0.5rem;
+  border-right: 1px solid #e5e7eb;
+}
+
+.schedule-time-labels {
+  display: flex;
+}
+
+.schedule-time-label {
+  width: 1.25rem;
+  flex-shrink: 0;
+  text-align: center;
+  font-size: 9px;
+  color: #6b7280;
+}
+
+.schedule-data-row {
+  display: flex;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.schedule-data-row-even {
+  background-color: #f9fafb;
+}
+
+.schedule-data-row-odd {
+  background-color: white;
+}
+
+.schedule-row-label {
+  width: 8rem;
+  flex-shrink: 0;
+  padding: 0.75rem;
+  border-right: 2px solid #d1d5db;
+  display: flex;
+  align-items: center;
+}
+
+.schedule-row-label-text {
+  color: #1f2937;
+}
+
+.schedule-data-cell {
+  width: 20rem;
+  flex-shrink: 0;
+  padding: 0.75rem;
+  border-right: 1px solid #e5e7eb;
+}
+
+/* タイムスロットセル */
+.timeslot-container {
+  position: relative;
+}
+
+.timeslot-groups {
+  display: flex;
+}
+
+.timeslot-group {
+  height: 1.25rem;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.timeslot-group-available {
+  background-color: #22c55e;
+}
+
+.timeslot-group-available:hover {
+  background-color: #16a34a;
+}
+
+.timeslot-group-reserved-others {
+  background-color: #ef4444;
+}
+
+.timeslot-group-reserved-others:hover {
+  background-color: #dc2626;
+}
+
+.timeslot-group-reserved-self {
+  background-color: #3b82f6;
+}
+
+.timeslot-group-reserved-self:hover {
+  background-color: #2563eb;
+}
+
+.timeslot-group-active {
+  outline: 2px solid #111827;
+  outline-offset: 0;
+  transform: scaleY(1.1);
+}
+
+.timeslot-tooltip {
+  position: fixed;
+  z-index: 50;
+  background-color: white;
+  border: 2px solid #d1d5db;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  padding: 1rem;
+  min-width: 200px;
+}
+
+.timeslot-tooltip-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.timeslot-tooltip-row {
+  display: flex;
+}
+
+.timeslot-tooltip-label {
+  color: #6b7280;
+}
+
+.timeslot-tooltip-value {
+  color: #111827;
+  margin-left: 0.25rem;
+}
+
+.timeslot-tooltip-close {
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.timeslot-tooltip-button {
+  background: none;
+  border: none;
+  color: #6b7280;
+  cursor: pointer;
+  padding: 0;
+}
+
+.timeslot-tooltip-button:hover {
+  color: #111827;
+}
